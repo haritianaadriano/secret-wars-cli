@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 import yargs from 'yargs';
-import chalk from 'chalk';
+import * as fs from "fs";
 import boxen from 'boxen';
 import { getSecrets, insertSecrets } from './repository.js';
 
-const invalid_usage = chalk.red("Usage: enter valid arguments or run --help");
+fs.appendFile("data.json", "", (err) => {
+   if(err) {
+    console.log(err);
+   }
+})
 
 const usage = boxen('Secret-Wars');
 
