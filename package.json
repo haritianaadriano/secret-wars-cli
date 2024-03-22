@@ -1,0 +1,11 @@
+{
+  "name": "secret-wars",
+  "version": "1.0.0",
+  "description": "a command line interface to manage password ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Haritiana Adriano",
+  "license": "ISC"
+}
