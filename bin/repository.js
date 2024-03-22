@@ -1,7 +1,18 @@
-import * as fs from 'fs';
+import fs from 'node:fs';
+import path from "node:path";
+import os from "node:os";
+
+const secretWarsFilepath = path.resolve(os.homedir(), ".secretwars.json");
+
+export const initRepo = () => {
+  // only create when inexistent
+  if (!fs.existsSync(secretWarsFilepath)) {
+    fs.writeFileSync(secretWarsFilepath, "[]");
+  }
+}
 
 export const getSecrets = () => {
-    fs.readFile("./data.json", (err, json) => {
+    fs.readFile(secretWarsFilepath, (err, json) => {
         if(err) {
             console.log(err);
             return; 
@@ -17,7 +28,7 @@ export const getSecrets = () => {
 }
 
 export const insertSecrets = (toInsert) => {
-    fs.readFile("./data.json", (err, json) => {
+    fs.readFile(secretWarsFilepath, (err, json) => {
         if(err) {
             console.log(err);
             return; 
@@ -36,7 +47,7 @@ export const insertSecrets = (toInsert) => {
         
         const updatedJson = JSON.stringify(secrets);
 
-        fs.writeFile("./data.json", updatedJson, (err) => {
+        fs.writeFile(secretWarsFilepath, updatedJson, (err) => {
             if(err) {
                 console.log(err);
             }

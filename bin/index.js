@@ -1,14 +1,9 @@
 #!/usr/bin/env node
 import yargs from 'yargs';
-import * as fs from "fs";
 import boxen from 'boxen';
-import { getSecrets, insertSecrets } from './repository.js';
+import {initRepo, getSecrets, insertSecrets} from './repository.js';
 
-fs.appendFile("./data.json", "", (err) => {
-   if(err) {
-    console.log(err);
-   }
-})
+initRepo();
 
 const usage = boxen('Secret-Wars');
 
