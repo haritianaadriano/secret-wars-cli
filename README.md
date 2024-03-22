@@ -6,7 +6,7 @@ such as your facebook password or other.
 ## Requirements
 
 - You need to have this following dependencies:
- 1. Node.js from [https://nodejs.org/en](official node js) equal or ^v21.7.1
+ 1. Node.js from [official Node.js website](https://nodejs.org/en) equal or `^v21.7.1`
  2. npm correctly configured
 
 ## Installation
