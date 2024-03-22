@@ -2,10 +2,16 @@
   "name": "secret-wars",
   "version": "1.0.0",
   "description": "a command line interface to manage password ",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
     "test": "test"
   },
   "author": "Haritiana Adriano",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "bin": {
+    "secretwars": "./bin/index.js"
+  }
 }
