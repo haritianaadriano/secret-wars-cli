@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 
 export const getSecrets = () => {
-    fs.readFile("data.json", (err, json) => {
+    fs.readFile("./data.json", (err, json) => {
         if(err) {
             console.log(err);
             return; 
@@ -17,7 +17,7 @@ export const getSecrets = () => {
 }
 
 export const insertSecrets = (toInsert) => {
-    fs.readFile("data.json", (err, json) => {
+    fs.readFile("./data.json", (err, json) => {
         if(err) {
             console.log(err);
             return; 
@@ -36,7 +36,7 @@ export const insertSecrets = (toInsert) => {
         
         const updatedJson = JSON.stringify(secrets);
 
-        fs.writeFile("data.json", updatedJson, (err) => {
+        fs.writeFile("./data.json", updatedJson, (err) => {
             if(err) {
                 console.log(err);
             }

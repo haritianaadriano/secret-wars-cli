@@ -4,7 +4,7 @@ import * as fs from "fs";
 import boxen from 'boxen';
 import { getSecrets, insertSecrets } from './repository.js';
 
-fs.appendFile("data.json", "", (err) => {
+fs.appendFile("./data.json", "", (err) => {
    if(err) {
     console.log(err);
    }

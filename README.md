@@ -32,3 +32,4 @@ run ```npm install -g .```
 ## Bugs
 
 - Displaying secrets is in JSON format
+- Secret list disapear after changing directory
