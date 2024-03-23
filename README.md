@@ -3,6 +3,11 @@
 Secret Wars is a comand line interface to allow you managing and view your password and secret
 such as your facebook password or other.
 
+## Features
+1. Store your password and secret
+2. Insert your password and secret
+3. Export your password and secret into a txt file
+
 ## Requirements
 
 - You need to have this following dependencies:
@@ -28,6 +33,12 @@ run ```npm install``` and ```npm install -g .```
 ```secretwars -r <subject> <secret>```
 
 > Notice: subject and secret should be a string as (secretwars -r "facebook" "passwd")
+
+- Export all your secrets in a txt file
+
+```secretwars -w```
+
+> Notice: the file generated is locate in your current working directory
 
 ## Bugs
 
