@@ -13,7 +13,7 @@ such as your facebook password or other.
 
 Clone this repository, enter to project directory and then 
 
-run ```npm install -g .```
+run ```npm install``` and ```npm install -g .```
 
 > Notice: soon publish to npm
 
@@ -32,4 +32,3 @@ run ```npm install -g .```
 ## Bugs
 
 - Displaying secrets is in JSON format
-- Secret list disapear after changing directory

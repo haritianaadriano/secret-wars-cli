@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "secret-wars",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a command line interface to manage password ",
   "main": "bin/index.js",
   "scripts": {
