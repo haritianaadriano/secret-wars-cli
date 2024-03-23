@@ -1,4 +1,4 @@
-# SECRET-WARS
+# SECRET-WARS :balloon:
 
 Secret Wars is a comand line interface to allow you managing and view your password and secret
 such as your facebook password or other.
