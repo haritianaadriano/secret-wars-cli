@@ -20,7 +20,7 @@ Clone this repository, enter to project directory and then
 
 run ```npm install``` and ```npm install -g .```
 
-> Notice: soon publish to npm
+> ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) Notice: soon publish to npm
 
 ## Usage
 
@@ -32,13 +32,13 @@ run ```npm install``` and ```npm install -g .```
 
 ```secretwars -r <subject> <secret>```
 
-> Notice: subject and secret should be a string as (secretwars -r "facebook" "passwd")
+> ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) Notice: subject and secret should be a string as (secretwars -r "facebook" "passwd")
 
 - Export all your secrets in a txt file
 
 ```secretwars -w```
 
-> Notice: the file generated is locate in your current working directory
+> ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) Notice: the file generated is locate in your current working directory
 
 ## Bugs
 
